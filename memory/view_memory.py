@@ -32,7 +32,7 @@ def view_memory():
         if prompt := st.chat_input():
             
             context_retrieved = search_full_memory_and_rerank(query=prompt,user=user, session=session)
-            if isinstance(context_retrieved, List):
+            if len(context_retrieved) > 0:
                 context = "\n".join(f"{result['text']}" for result in context_retrieved)
             else: 
                 context_retrieved = []

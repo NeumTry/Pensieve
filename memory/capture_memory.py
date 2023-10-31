@@ -38,13 +38,13 @@ def capture_memory():
     if prompt := st.chat_input():
         message_to_store = []
         history_retrieved = search_chat_memory(query=prompt,user=user, session=session)
-        if isinstance(history_retrieved, List):
+        if len(history_retrieved) > 0:
             history = "\n".join(f"{message['role']}: {message['content']}" for message in history_retrieved)
         else: 
             history_retrieved = []
             history = "No history available"
         document_history_retrieved = search_document_memory(query=prompt,user=user, session=session)
-        if isinstance(document_history_retrieved, List):
+        if len(document_history_retrieved) > 0:
             document_history = "\n".join(f"Document: {result['text']}" for result in document_history_retrieved)
         else: 
             document_history_retrieved = []
