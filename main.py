@@ -26,7 +26,7 @@ if 'view_session' not in st.session_state:
 image = Image.open('./media/R.gif')
 
 with st.sidebar:
-    st.title("Pensieve by Neum AI")
+    st.markdown("<h1 style='text-align: center'>Pensieve by <a href='neum.ai'>Neum AI</a></h1>", unsafe_allow_html=True)
     st.image(image=image)
     tab1, tab2 = st.tabs(["Home", "About"])
 
