@@ -1,0 +1,7 @@
+pyperclip==1.8.2
+streamlit==1.28.0
+openai==0.28.1
+Pillow==10.1.0
+weaviate-client==3.25.1
+langchain==0.0.326
+supabase==2.0.0
