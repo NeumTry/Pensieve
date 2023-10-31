@@ -1,8 +1,8 @@
 import streamlit as st
 import pyperclip
 from PIL import Image
-from capture_memory import capture_memory
-from view_memory import view_memory
+from memory.capture_memory import capture_memory
+from memory.view_memory import view_memory
 import uuid
 
 query_params = st.experimental_get_query_params()
@@ -23,7 +23,7 @@ if 'view_user' not in st.session_state:
 if 'view_session' not in st.session_state:
     st.session_state['view_session'] = query_params.get("session", [""])[0]
 
-image = Image.open('./img/R.gif')
+image = Image.open('./media/R.gif')
 
 with st.sidebar:
     st.title("Pensieve by Neum AI")

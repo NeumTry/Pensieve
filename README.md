@@ -1,6 +1,6 @@
 # Pensieve by Neum AI
 
-![Pensieve GIF](./img/gif.gif)
+![Pensieve GIF](./media/gif.gif)
 
 ## What is the Pensieve?
 
