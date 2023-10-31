@@ -1,5 +1,4 @@
 import streamlit as st
-import pyperclip
 from PIL import Image
 from memory.capture_memory import capture_memory
 from memory.view_memory import view_memory
@@ -54,9 +53,8 @@ with st.sidebar:
             st.session_state['capture_session'] = st.text_input("Session ID", value=st.session_state['capture_session'], disabled=True)
             # Change value of URL if you want to change the share path
             url = "https://neumai-pensieve.streamlit.app/?user=" + st.session_state['capture_user'] + "&session=" + st.session_state['capture_session'] + "&page=view_memory"
-            if st.button('Share memory'):
-                pyperclip.copy(url)
-                st.success('Text copied successfully!')
+            if st.button('Share memory', use_container_width=True):
+                st.code(url)
             st.session_state['debug'] = st.toggle("Debug mode")
         
         if st.session_state['page'] == "view_memory":
