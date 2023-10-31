@@ -98,8 +98,8 @@ def search_chat_memory(query:str, user:str, session:str) -> List:
             # unify our api with the metadata.. or just return whatever metadata we have. (?)
             matches.append(result)
     except Exception as e:
-        print(f"There was an error querying chat history")
-        return None
+        print(f"No chat history retrieved")
+        return []
     
     return matches
 
@@ -135,8 +135,8 @@ def search_document_memory(query:str, user:str, session:str) -> List:
             # unify our api with the metadata.. or just return whatever metadata we have. (?)
             matches.append(result)
     except Exception as e:
-        print(f"There was an error querying chat history")
-        return None
+        print(f"No document history retrieved")
+        return []
     
     return matches
 
