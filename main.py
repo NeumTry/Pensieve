@@ -31,9 +31,8 @@ with st.sidebar:
 
     with tab2:
         st.caption("This application is a showcase for Neum AI Chat Memory. The goal is to leverage Retrieval Augmented Generation (RAG) in the context of chat memory. This helps reduce the amount of context provided back to LLM models and only providing the most contextual information.")
-
         st.caption("As a side-effect of doing this, it means that conversations are fully indexed making them suitable to be shared with other users. Like Dumbuldore in Harry Potter, share your memories with co-workers or friends from the conversations you have with the Pensieve.")
-
+        st.caption("See [full repo](https://github.com/NeumTry/Pensieve).")
     with tab1:
         st.markdown("Using the Pensieve is simple:")
         st.markdown("1. Capture a memory\n\n2. Share a memory\n\n3. View a memory")
