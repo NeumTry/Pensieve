@@ -1,4 +1,4 @@
-# Pensieve by Neum AI
+# Pensieve by Neum AI - [Live](https://neumai-pensieve.streamlit.app/)
 
 ![Pensieve GIF](./media/gif.gif)
 
